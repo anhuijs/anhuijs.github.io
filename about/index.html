@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="i1Wty9d4fP"><title>  · 安徽前端交流群 - 613860249</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=" - 豪情"><meta name="keywords"><meta name="author" content="豪情"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="安徽前端交流群 - 613860249"></head><body class="about"><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="文章" class="nav-list-link">文章</a></li><li class="nav-list-item"><a href="/archives/" target="_self" data-hover="归档" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="/categories/hr/" target="_self" data-hover="招聘" class="nav-list-link">招聘</a></li><li class="nav-list-item"><a href="/categories/job/" target="_self" data-hover="求职" class="nav-list-link">求职</a></li><li class="nav-list-item"><a href="/about/" target="_self" data-hover="英雄榜" class="nav-list-link">英雄榜</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title"></h1><div class="post-info">2017-04-05 11:05</div><div class="post-content"><!--CUSTOM STYLE-->
+<link rel="stylesheet" type="text/css" href="/css/my/common-own.css">
+<!--CUSTOM STYLE END-->
+<div class="article-row">
+    <article class="article article-summary">
+        <div class="article-summary-inner">
+            <div id="app" class="article-city">
+                <div class="article-item">
+                    <div class="article-city-inner">
+                        <all-user-list :all-user-info="all"></all-user-list>
+                        <p class="article-statement">*以上排名不分先后</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<!--CUSTOM SCRIPT-->
+<script id="tpl-user-list">
+    var tplUserList = `<ol class="user-list clearfix" >
+            <li v-for="(item, index) in allUserInfo">
+                <div class="user-title"><h2><em class="no" v-text="index+1">.</em><a :href="item.blog" target="_blank" v-text="item.name"></a></h2></div>
+                <div class="userinfo-content">
+                    <a class="userinfo-img" :href="item.blog" target="_blank"><img :src="item.avatar" alt=""></a>
+                    <div class="desc">
+                        <dl class="desc-info">
+                            <dd v-if="item.blog"><a :href="item.blog" target="_blank">博客</a></dd>
+                            <dd ><a :href="item.github" target="_blank">Github</a></dd>
+                            <dd v-if="item.website"><a :href="item.website" target="_blank">个人站点</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="useinfo-word"><p class="sub" :title="item.word" v-text="item.word"></p></div>
+            </li>
+        </ol>`
+</script>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/vue.min.js"></script>
+<script src="/js/my/about.js"></script>
+<!--CUSTOM SCRIPT END-->
+</div></article></div><div class="right-container"><div class="widget"><div class="category"><h4>分类归档</h4><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hr/">hr</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/job/">job</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开源消息/">开源消息</a><span class="category-list-count">1</span></li></ul></div></div><div class="widget"><div class="tagcloud"><h4>标签云</h4></div></div><div class="widget"><div class="recent"><h4>最近文章</h4><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/08/job/index/">【求职】- 求职信息标题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/08/hr/index/">【招聘】- 招聘信息标题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/08/article/welcome-2017/">2017-我们来了</a></li></ul></div></div><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"></div><div data-thread-key="about/index.html" data-title="" data-url="http://yoursite.com/about/index.html" data-content="&lt;!--CUSTOM STYLE--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/my/common-own.css&quot;&gt;
+&lt;!--CUSTOM STYLE END--&gt;
+&lt;div class=&quot;article-row&quot;&gt;
+    &lt;article class=&quot;article article-summary&quot;&gt;
+        &lt;div class=&quot;article-summary-inner&quot;&gt;
+            &lt;div id=&quot;app&quot; class=&quot;article-city&quot;&gt;
+                &lt;div class=&quot;article-item&quot;&gt;
+                    &lt;div class=&quot;article-city-inner&quot;&gt;
+                        &lt;all-user-list :all-user-info=&quot;all&quot;&gt;&lt;/all-user-list&gt;
+                        &lt;p class=&quot;article-statement&quot;&gt;*以上排名不分先后&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+&lt;/div&gt;
+
+&lt;!--CUSTOM SCRIPT--&gt;
+&lt;script id=&quot;tpl-user-list&quot;&gt;
+    var tplUserList = `&lt;ol class=&quot;user-list clearfix&quot; &gt;
+            &lt;li v-for=&quot;(item, index) in allUserInfo&quot;&gt;
+                &lt;div class=&quot;user-title&quot;&gt;&lt;h2&gt;&lt;em class=&quot;no&quot; v-text=&quot;index+1&quot;&gt;.&lt;/em&gt;&lt;a :href=&quot;item.blog&quot; target=&quot;_blank&quot; v-text=&quot;item.name&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;/div&gt;
+                &lt;div class=&quot;userinfo-content&quot;&gt;
+                    &lt;a class=&quot;userinfo-img&quot; :href=&quot;item.blog&quot; target=&quot;_blank&quot;&gt;&lt;img :src=&quot;item.avatar&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+                    &lt;div class=&quot;desc&quot;&gt;
+                        &lt;dl class=&quot;desc-info&quot;&gt;
+                            &lt;dd v-if=&quot;item.blog&quot;&gt;&lt;a :href=&quot;item.blog&quot; target=&quot;_blank&quot;&gt;博客&lt;/a&gt;&lt;/dd&gt;
+                            &lt;dd &gt;&lt;a :href=&quot;item.github&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;&lt;/dd&gt;
+                            &lt;dd v-if=&quot;item.website&quot;&gt;&lt;a :href=&quot;item.website&quot; target=&quot;_blank&quot;&gt;个人站点&lt;/a&gt;&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;useinfo-word&quot;&gt;&lt;p class=&quot;sub&quot; :title=&quot;item.word&quot; v-text=&quot;item.word&quot;&gt;&lt;/p&gt;&lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;`
+&lt;/script&gt;
+
+&lt;script src=&quot;/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/vue.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/my/about.js&quot;&gt;&lt;/script&gt;
+&lt;!--CUSTOM SCRIPT END--&gt;
+" class="ds-share"><div class="ds-share-inline"><ul class="ds-share-icons-16"> <li>分享到：</li><li><a href="javascript:void(0)" data-service="weibo" class="ds-weibo">新浪微博</a></li><li><a href="javascript:void(0)" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div class="copyright"><p>© 2016 - 2017 <a target="_blank">豪情</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a>.</p></div><div class="totop"><i></i></div></div></footer><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="/scripts/jquery-1.8.2.min.js"></script><script src="/scripts/arAnchor.js"></script><script src="/scripts/main.js"></script></body></html>
